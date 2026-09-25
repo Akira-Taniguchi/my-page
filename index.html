@@ -143,6 +143,22 @@
   }
   .sec-lead{margin:0 0 32px;color:var(--muted);font-size:15px;}
 
+  /* ===== お知らせ ===== */
+  .news{padding:0 0 8px;}
+  .news-card{
+    display:grid;gap:14px 24px;grid-template-columns:1fr;align-items:center;
+    background:var(--cream);border:1px solid var(--cream-deep);
+    border-radius:var(--radius);padding:22px 22px;
+  }
+  @media(min-width:760px){.news-card{grid-template-columns:1fr auto;padding:24px 28px;}}
+  .news-label{
+    display:inline-block;font-size:12px;font-weight:700;letter-spacing:.12em;
+    color:#fff;background:var(--navy);border-radius:999px;padding:2px 12px;
+  }
+  .news-title{margin:8px 0 4px;font-size:18px;font-weight:900;color:var(--navy-deep);line-height:1.55;}
+  .news-text{margin:0;font-size:14px;color:var(--muted);line-height:1.8;}
+  .news .btn{white-space:nowrap;justify-self:start;}
+
   /* ===== お悩み ===== */
   .worries{
     display:grid;gap:12px;
@@ -344,6 +360,22 @@
     </div>
   </div>
 
+  <!-- ===== お知らせ ===== -->
+  <div class="news">
+    <div class="wrap">
+      <div class="news-card">
+        <div>
+          <span class="news-label">お知らせ</span>
+          <p class="news-title">公開講座「貝塚デジタル共創ラボ」の講師を務めます</p>
+          <p class="news-text">
+            貝塚市の「公民連携による地域活性化共創チャレンジ事業」として、AI・DX・デジタルマネーの基礎を学ぶ公開講座を開催します。月1回・全4回、参加費は無料です。第一回は11月7日（土）です。
+          </p>
+        </div>
+        <a class="btn btn-ghost" href="https://kyousou.vercel.app/" target="_blank" rel="noopener">講座の詳細・お申し込み</a>
+      </div>
+    </div>
+  </div>
+
   <!-- ===== お悩み ===== -->
   <section>
     <div class="wrap">
@@ -539,6 +571,7 @@
         <li><a href="https://osaka.pycon.jp/" target="_blank" rel="noopener">PyCon mini Osaka</a> 座長</li>
         <li><a href="https://x.com/horobi_gengar/status/1647518685853257728?s=20" target="_blank" rel="noopener">ETHGlobal Tokyo ハッカソン ファイナリスト</a></li>
         <li><a href="https://kansai-tcc.dle.or.jp/" target="_blank" rel="noopener">関西テッククリエイターチャレンジ</a> PM（2024・2025・2026）</li>
+        <li><a href="https://kyousou.vercel.app/" target="_blank" rel="noopener">貝塚デジタル共創ラボ</a> 講師（貝塚市 共創チャレンジ事業、2026〜2027）</li>
       </ul>
 
       <details class="tech">
